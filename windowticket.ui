@@ -1,0 +1,988 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>windowticket</class>
+ <widget class="QMainWindow" name="windowticket">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(85, 170, 127)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>410</y>
+      <width>121</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Retour Au Menu</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>811</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(85, 170, 127)</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="widget">
+     <attribute name="title">
+      <string>ajouter ticket</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>20</y>
+        <width>521</width>
+        <height>251</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Comic Sans MS</family>
+       </font>
+      </property>
+      <property name="title">
+       <string>Formulaire Ajout Tickets</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>30</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>60</y>
+         <width>131</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>ID MATCH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>100</y>
+         <width>101</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>DATE TICKET</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_id">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>30</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nombre">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>60</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>60</y>
+         <width>93</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Ajouter</string>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>100</y>
+         <width>110</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="le_nombre_3">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>180</y>
+         <width>113</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_11">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>140</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TYPE</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>180</y>
+         <width>71</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PRIX</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="t_type_ajout">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>140</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Choisir Type</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>VIP</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Normal</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>afficher ticket</string>
+     </attribute>
+     <widget class="QTableView" name="tab_tickets">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>551</width>
+        <height>192</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>30</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Tri</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_6">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>80</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Statistique</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pdf_btn_t">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>130</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chat_btn_t">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>180</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Chat</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>250</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Recherche</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_nombre_6">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>220</y>
+        <width>191</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="checkBox">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>30</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Tri</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>supprimer ticket</string>
+     </attribute>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>86</y>
+        <width>56</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>80</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Supprimer</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="supprimer_ticket_combo">
+      <property name="geometry">
+       <rect>
+        <x>292</x>
+        <y>85</y>
+        <width>121</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>modifier ticket</string>
+     </attribute>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>40</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>70</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ID D'EVENEMENT</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>100</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>DATES DES TICKETS</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>40</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>70</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+     </widget>
+     <widget class="QDateEdit" name="dateEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>100</y>
+        <width>110</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>110</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+color: white;
+
+
+
+background:rgb(0, 170, 255) ;
+
+
+
+font: bold, &quot;Comic Sans MS&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Modifier</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_nombre_4">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>180</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>140</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TYPE</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PRIX</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="t_type_modifier">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>140</y>
+        <width>111</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 2px solid black;
+
+
+
+border-radius: 10px;
+
+
+
+padding: 0 8px;
+
+
+
+background: white;
+
+
+
+selection-background-color: gray;</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Choisir Type</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>VIP</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Normal</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>834</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
